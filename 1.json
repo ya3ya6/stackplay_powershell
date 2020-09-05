@@ -1,0 +1,77 @@
+<div class="navPanel" id="errorLeg">
+  
+
+<span>Status</span>
+  <div id="d1">
+    <span class="icon icon-14 icon-ci-ok-square-check success" id="errCheck" />
+    <span id="errListLink">No errors found</span>
+  </div>
+  <div id="isks" class="navPStatus">
+    <span class="statusIcon warning" id="uninitWarning" />
+    <span id="uninitM">32 uninitia</span>
+    <span class="icon icon-inplace-help icon-ci-help-question-mark-circle" id="uninitMsgHelp" title="If all disks have not finished initializing, all disk space is not yet available for consumption" />
+  </div>
+  <div id="dataNote">
+    <div class="statusIcon warning" id="dataWarnIco" />
+    <a id="dataWarnLink">Data warning</a>
+  </div>
+</div><div class="navPanel" id="spareMode">
+  <span>Spare Mode</span>
+  <div id="rd1" class="navPanelStatus">
+    <span>Distributed Spare</span>
+  </div>
+</div><div class="navPanel" id="objStats">
+  <span>Disk Summ</span>
+  <div>Disks: 304</div>
+  <div>Enc: 13</div>
+</div><div class="navPan" id="contSum">
+  <span>Paths</span>
+  <div>
+    <table class="contsumTable">
+      <thead>
+        <tr>
+          <th>Controller</th>
+          <th>0</th>
+          <th>1</th>
+          <th>2</th>
+          <th>2+</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="contRow">
+          <td>86900</td>
+          <td class="ccgood">0</td>
+          <td class="ccgood">0</td>
+          <td>304</td>
+          <td class="ccgood">0</td>
+        </tr>
+        <tr class="contRow">
+          <td>86901</td>
+          <td class="ccgood">0</td>
+          <td class="ccgood">0</td>
+          <td>304</td>
+          <td class="ccgood">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><div id="filterPanel" class="navPanel">
+  <span>Health Filter</span>
+  <div class="healthDiv">
+    <select id="healthFilter" class="select.small fieldValue rounded medium">
+      <option value="0">Off (No filter)</option>
+      <option value="Healthy">Healthy (304)</option>
+      <option value="Unhealthy" class="hC">althy (0)</option>
+    </select>
+    <div>: 0</div>
+  </div>
+</div><div id="diskAttrPanel" class="navPanel">
+  <span>Class Filter</span>
+  <div class="dADiv">
+    <select id="classFilter" class="select.small fieldValue rounded medium">
+      <option value="0">Off (No filter)</option>
+      <option value="read">read(32)</option>
+      <option value="under">under(272)</option>
+    </select>
+  </div>
+</div>
